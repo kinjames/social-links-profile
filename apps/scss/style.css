@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+@media (max-width: 39.9375em) {
+  body {
+    width: 100%;
+  }
+}
+
+.container {
+  width: 400px;
+  border-radius: 16px;
+  padding: 2rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background-color: hsl(0, 0%, 12%);
+}
+@media (max-width: 39.9375em) {
+  .container {
+    width: 90%;
+  }
+}
+.container .img-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+@media (max-width: 39.9375em) {
+  .container .img-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.875rem;
+  }
+}
+.container .img-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+.container .texts .name {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.container .texts .location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+@media (max-width: 39.9375em) {
+  .container .texts .location {
+    margin-bottom: 1.5rem;
+  }
+}
+.container .texts .bio {
+  font-weight: 200;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+.container .socials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  width: 90%;
+}
+@media (max-width: 39.9375em) {
+  .container .socials {
+    gap: 1rem;
+  }
+}
+.container .socials .social-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  background-color: hsl(0, 0%, 20%);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 39.9375em) {
+  .container .socials .social-links {
+    height: 40px;
+    font-weight: 500;
+    font-size: 0.875;
+  }
+}
+.container .socials .social-links:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=style.css.map */

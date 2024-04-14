@@ -1,0 +1,98 @@
+.container {
+  width: 400px;
+  border-radius: 16px;
+  padding: 2rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background-color: hsl(0, 0%, 12%);
+
+  @include breakpoint-down(small) {
+    width: 90%;
+  }
+
+  .img-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+    @include breakpoint-down(small) {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 0.875rem;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .texts {
+    .name {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .location {
+      color: $green;
+      font-weight: 600;
+      margin-bottom: 2rem;
+
+      @include breakpoint-down(small) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .bio {
+      font-weight: 200;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    width: 90%;
+
+    @include breakpoint-down(small) {
+      gap: 1rem;
+    }
+
+    .social-links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      height: 50px;
+      background-color: $gray;
+      text-decoration: none;
+      color: $fontColor;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+
+      @include breakpoint-down(small) {
+        height: 40px;
+        font-weight: 500;
+        font-size: 0.875;
+      }
+
+      &:hover {
+        background-color: $green;
+        color: $background;
+      }
+    }
+  }
+}
